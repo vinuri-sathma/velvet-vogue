@@ -1,0 +1,246 @@
+body {
+  font-family: Arial;
+  background:#fdf6fa;
+}
+
+header {
+  background:#add8e6;
+  padding:15px;
+  text-align:center;
+}
+.footer {
+  background:#add8e6;
+  padding:15px;
+  text-align:center;
+}
+
+button {
+  background:#ffb6c1;
+  border:none;
+  padding:10px;
+  cursor:pointer;
+}
+
+.product {
+  border:1px solid #ccc;
+  padding:10px;
+  margin:10px;
+}
+
+/*ADD PRODUCT PAGE*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #fdf6fa;
+}
+
+/* Center page */
+.add-product-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main form box */
+.form-box {
+    background: #bfe3ee;
+    width: 550px;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Heading */
+.form-box h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 25px;
+}
+
+/* Labels */
+.form-box label {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 18px 0 8px;
+}
+
+/* Inputs & Select */
+.form-box input[type="text"],
+.form-box input[type="number"],
+.form-box select,
+.form-box textarea {
+    width: 95%;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #aaa;
+    outline: none;
+}
+
+/* Textarea height */
+.form-box textarea {
+    min-height: 100px;
+    resize: none;
+}
+
+/* File input */
+.form-box input[type="file"] {
+    width: 95%;
+    padding: 12px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #aaa;
+}
+
+/* Buttons container */
+.form-box .btn-area {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Add Product button */
+.form-box button {
+    background: #f7b3c8;
+    border: none;
+    padding: 14px 26px;
+    font-size: 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.form-box button:hover {
+    background: #f598b5;
+}
+
+/* Cancel link button */
+.form-box a {
+    background: #ddd;
+    padding: 14px 26px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.form-box a:hover {
+    background: #ccc;
+}
+
+/* Success / error messages */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #fdf6fa;
+}
+
+/* Center page */
+.add-product-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main form box */
+.form-box {
+    background: #bfe3ee;
+    width: 550px;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Heading */
+.form-box h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 25px;
+}
+
+/* Labels */
+.form-box label {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 18px 0 8px;
+}
+
+/* Inputs & Select */
+.form-box input[type="text"],
+.form-box input[type="number"],
+.form-box select,
+.form-box textarea {
+    width: 95%;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #aaa;
+    outline: none;
+}
+
+/* Textarea height */
+.form-box textarea {
+    min-height: 100px;
+    resize: none;
+}
+
+/* File input */
+.form-box input[type="file"] {
+    width: 95%;
+    padding: 12px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #aaa;
+}
+
+/* Buttons container */
+.form-box .btn-area {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Add Product button */
+.form-box button {
+    background: #f7b3c8;
+    border: none;
+    padding: 14px 26px;
+    font-size: 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.form-box button:hover {
+    background: #f598b5;
+}
+
+/* Cancel link button */
+.form-box a {
+    background: #ddd;
+    padding: 14px 26px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.form-box a:hover {
+    background: #ccc;
+}
+
+
