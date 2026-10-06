@@ -76,7 +76,7 @@ if(isset($_POST['update'])){
 }
 .sidebar{
     width:220px;
-    background: #80c1c1;
+    background: #add8e6;
     height:165vh;
     padding:20px;
 }
@@ -98,14 +98,26 @@ if(isset($_POST['update'])){
     flex:1;
     padding:20px;
 }
+body{
+        margin:0;
+        padding:0;
+        font-family: Arial, sans-serif;
+
+        /* ADMIN page background image */
+        background-image: url('../images/bg-fashion_3.jpg');
+        background-size: cover;        /* cover whole screen */
+        background-position: center;   /* center image */
+        background-repeat: no-repeat;  /* no repeat */
+        background-attachment: fixed;  /* fixed on scroll */
+    }
 </style>
 </head>
 
 <!-- LEFT MENU -->
 <div class="sidebar">
-    <br><br><br><br><br><br><h3 style="text-align:center;"><b>Dashboard</b></h3>
-    <a href="add_product.php">Add Product</a><br>
-    <a href="../products.php" target="_blank">View Products</a><br>
+    <br><br><br><br><br><br><h3 style="text-align:center;"><b><u>AdminDashboard</u></b></h3>
+    <a href="add_product.php">Add New Product</a><br>
+    <a href="../products.php" target="_blank">View All Products</a><br>
     <a href="admin_logout.php">Logout</a>
 </div>
 
@@ -141,10 +153,10 @@ if(isset($_POST['update'])){
     <input type="file" name="image">
 
     <label>size</label>
-    <input type="text" name="size" value="<?php echo $product['name']; ?>">
+    <input type="text" name="size" value="<?php echo $product['size']; ?>">
 
     <label>color</label>
-    <input type="text" name="color" value="<?php echo $product['name']; ?>">
+    <input type="text" name="color" value="<?php echo $product['color']; ?>">
 
     <br><br>
     <button type="submit" name="update">Update Product</button>

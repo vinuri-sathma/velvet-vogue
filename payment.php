@@ -58,6 +58,30 @@ if(isset($_POST['pay_now'])){
 
     // If no error so far, demo mode - just redirect (no database save)
     if($msg == ''){
+
+        // ✅ Save order to orders table (only existing columns)
+        $stmt = $conn->prepare("
+            INSERT INTO orders (user_id, total, order_date, payment_method)
+            VALUES (?, ?, NOW(), ?)
+        ");
+
+        $stmt->bind_param(
+            "ids",
+            $user_id,
+            $total,
+            $method
+        );
+
+        $stmt->execute();
+        $stmt->close();
+
+        // Clear cart and checkout total
+        unset($_SESSION['cart']);
+        unset($_SESSION['checkout_total']);
+
+        // Redirect to order success page
+        header("Location: order_success.php");
+
         // Clear cart and checkout total
         unset($_SESSION['cart']);
         unset($_SESSION['checkout_total']);
@@ -75,10 +99,26 @@ if(isset($_POST['pay_now'])){
     <title>Payment - Velvet Vogue</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
+        body{
+        margin:0;
+        padding:0;
+        font-family: Arial, sans-serif;
+
+        background-image: url('images/bg-fashion_5.jpg'); /* your image path */
+        background-size: cover;        /* make image cover whole page */
+        background-position: center;   /* center the image */
+        background-repeat: no-repeat;  /* no repeating */
+        background-attachment: fixed;  /* stay fixed when scrolling */
+        }
+        .header {
+            background:#add8e6;
+            padding:15px;
+            text-align:center;
+        }
         .payment-box{
             max-width:540px;
             margin:40px auto;
-            background:#f7fbff;
+            background:#add8e6;
             padding:20px 24px;
             border-radius:8px;
             box-shadow:0 4px 18px rgba(0,0,0,0.08);
@@ -99,8 +139,8 @@ if(isset($_POST['pay_now'])){
         button{
             width:100%;
             padding:12px;
-            background:#0066cc;
-            color:#fff;
+            background:#ffb6c1;
+            color: #000000;;
             border:none;
             border-radius:6px;
             font-weight:700;
@@ -108,7 +148,7 @@ if(isset($_POST['pay_now'])){
             font-size:15px;
         }
         button:hover{ opacity:0.95 }
-        .muted{color:#6b7280;font-size:13px}
+        .muted{color:;font-size:13px}
     </style>
 
     <script>
@@ -130,7 +170,9 @@ if(isset($_POST['pay_now'])){
 <body>
 
 <header style="background:#add8e6; padding:15px; text-align:center;">
-    <h1>Velvet Vogue</h1>
+    <div style="float:center;">
+    <img src="images/velvet_vogue_logo_8.png" alt="Velvet Vogue Logo" style="height:150px;">
+    </div>
 </header>
 
 <div class="payment-box">

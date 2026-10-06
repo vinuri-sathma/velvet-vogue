@@ -45,12 +45,24 @@ if(isset($_POST['add'])){
 <title>Add New Product</title>
 <link rel="stylesheet" href="../css/style.css">
 <style>
+ body{
+        margin:0;
+        padding:0;
+        font-family: Arial, sans-serif;
+
+        /* ADMIN page background image */
+        background-image: url('../images/bg-fashion_3.jpg');
+        background-size: cover;        /* cover whole screen */
+        background-position: center;   /* center image */
+        background-repeat: no-repeat;  /* no repeat */
+        background-attachment: fixed;  /* fixed on scroll */
+    }
 .admin-layout{
     display:flex;
 }
 .sidebar{
     width:220px;
-    background: #80c1c1;
+    background: #add8e6;
     height:130vh;
     padding:20px;
 }
@@ -78,7 +90,7 @@ if(isset($_POST['add'])){
 <div class="admin-layout">
 
 <div class="sidebar">
-    <br><br><br><br><br><br><h3 style="text-align:center;"><b>Dashboard</b></h3>
+    <br><br><br><br><br><br><h3 style="text-align:center;"><b><u>Admin Dashboard</u></b></h3>
     <a href="dashboard.php">Update Product</a><br>
     <a href="../products.php" target="_blank">View Products</a><br>
     <a href="admin_logout.php">Logout</a>

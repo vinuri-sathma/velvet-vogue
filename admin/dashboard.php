@@ -17,19 +17,31 @@ $res = $conn->query("SELECT * FROM products");
 <link rel="stylesheet" href="../css/style.css">
 
 <style>
+ body{
+        margin:0;
+        padding:0;
+        font-family: Arial, sans-serif;
+
+        /* ADMIN page background image */
+        background-image: url('../images/bg-fashion_3.jpg');
+        background-size: cover;        /* cover whole screen */
+        background-position: center;   /* center image */
+        background-repeat: no-repeat;  /* no repeat */
+        background-attachment: fixed;  /* fixed on scroll */
+    }
 .admin-layout{
     display:flex;
 }
 .sidebar{
     width:220px;
-    background: #80c1c1;
+    background: #add8e6;
     height:100vh;
     padding:20px;
 }
 .sidebar a{
     display:block;
-    padding:12px;
-    background:#f8c8dc;
+    padding:10px;
+    background:#add8e6;
     margin-bottom:10px;
     text-decoration:none;
     color:black;
@@ -38,7 +50,7 @@ $res = $conn->query("SELECT * FROM products");
     font-weight:bold;
 }
 .sidebar a:hover{
-    background:#ffb6c1;
+    background:#add8e6;
 }
 .content{
     flex:1;
@@ -48,19 +60,20 @@ $res = $conn->query("SELECT * FROM products");
 </head>
 
 <body>
-<header>
-    <h1>Velvet Vogue</h1>
-    <p>EMBRACE THE ELEGANCE WITHIN YOU</P>
+<header style="background:#add8e6; padding:15px; text-align:center;">
+    <div style="float:center;">
+    <img src="../images/velvet_vogue_logo_8.png" alt="Velvet Vogue Logo" style="height:150px;">
+    </div>
 </header>
 
 <div class="admin-layout">
 
 <!-- LEFT MENU -->
 <div class="sidebar">
-    <h3 style="text-align:center;"><b>Admin Dashboard</b></h3>
-    <a href="add_product.php">Add Product</a><br>
-    <a href="../products.php" target="_blank">View Products</a><br>
-    <a href="admin_logout.php">Logout</a>
+    <h3 style="text-align:center;"><b><u>Admin Dashboard</u></b></h3>
+    <a href="add_product.php"><button type="button"><b>Add New Product</b></button></a>
+    <a href="../products.php"><button type="button"><b>View All Products</b></button></a>
+    <a href="admin_logout.php"><button type="button"><b>Logout</b></button></a>
 </div>
 
 <!-- MAIN CONTENT -->

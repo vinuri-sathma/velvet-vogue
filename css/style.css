@@ -3,11 +3,12 @@ body {
   background:#fdf6fa;
 }
 
-header {
+.header {
   background:#add8e6;
   padding:15px;
   text-align:center;
 }
+
 .footer {
   background:#add8e6;
   padding:15px;

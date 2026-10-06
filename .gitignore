@@ -1,0 +1,5 @@
+git-installer.exe
+config/db.php
+.vscode/
+*.log
+.env

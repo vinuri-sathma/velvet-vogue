@@ -36,12 +36,27 @@ if(isset($_POST['login'])){
     <title>Velvet Vogue - Login</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/validation.js"></script>
+    <style>
+        body{
+        margin:0;
+        padding:0;
+        font-family: Arial, sans-serif;
+
+        background-image: url('images/bg-fashion_5.jpg'); /* your image path */
+        background-size: cover;        /* make image cover whole page */
+        background-position: center;   /* center the image */
+        background-repeat: no-repeat;  /* no repeating */
+        background-attachment: fixed;  /* stay fixed when scrolling */
+        }
+    </style>
 </head>
 <body>
 
 <header>
-    <h1>Velvet Vogue</h1>
-    <p>EMBRACE THE ELEGANCE WITHIN YOU </p>
+<header style="background:#add8e6; padding:15px; text-align:center;">
+    <div style="float:center;">
+    <img src="images/velvet_vogue_logo_8.png" alt="Velvet Vogue Logo" style="height:150px;">
+    </div>
 </header>
 
 <div style="width:300px; margin:50px auto; background:#add8e6; padding:20px; border-radius:10px;">
@@ -69,6 +84,14 @@ if(isset($_POST['login'])){
 </footer>
 </div>
 
+<!-- 🔐 SECRET ADMIN SHORTCUT -->
+<script>
+document.addEventListener("keydown", function(e) {
+    if (e.ctrlKey && e.key.toLowerCase() === "d") {
+        window.location.href = "admin/admin_login.php";
+    }
+});
+</script>
+
 </body>
 </html>
-

@@ -82,8 +82,10 @@ include 'config/db.php';
 
 <!-- HEADER -->
 <header>
-    <h1>Velvet Vogue</h1>
-    <p>EMBRACE THE ELEGANCE WITHIN YOU </p>
+    <header style="background:#add8e6; padding:15px; text-align:center;">
+    <div style="float:center;">
+    <img src="images/velvet_vogue_logo_8.png" alt="Velvet Vogue Logo" style="height:150px;">
+    </div>
     <nav>
         <?php if(!isset($_SESSION['user'])){ ?>
             <a href="login.php">Login</a> |
@@ -102,6 +104,7 @@ include 'config/db.php';
         both casual and formal lifestyles. Shop with confidence and style.
     </p>
 </section>
+
 <!-- CUSTOMER DASHBOARD -->
 <?php if(isset($_SESSION['user'])){ ?>
 <div class="dashboard">
@@ -128,7 +131,7 @@ include 'config/db.php';
             <h2><b>🎊 TODAY SALEDAY 🎊</b></h2>
             <h3>BIG EVENT</h3>
             <h4>10% OFF </h4>
-            <P> 26th of Jan 2026</p>
+            <P> 26th of Mar 2026</p>
             <p><b>PROMO CODE:TYX2026</b></p>
         </div>
     </div>

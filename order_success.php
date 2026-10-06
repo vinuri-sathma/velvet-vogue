@@ -3,15 +3,30 @@
 <head>
 <title>Order Success</title>
 <link rel="stylesheet" href="css/style.css">
+<style>
+        body{
+        margin:0;
+        padding:0;
+        font-family: Arial, sans-serif;
+
+        background-image: url('images/bg-fashion_5.jpg'); /* your image path */
+        background-size: cover;        /* make image cover whole page */
+        background-position: center;   /* center the image */
+        background-repeat: no-repeat;  /* no repeating */
+        background-attachment: fixed;  /* stay fixed when scrolling */
+        }
+</style>
 </head>
 <body>
 
 <header>
-<h1>Velvet Vogue</h1>
-<p>EMBRACE THE ELEGANCE WITHIN YOU</P>
+<header style="background:#add8e6; padding:15px; text-align:center;">
+    <div style="float:center;">
+    <img src="images/velvet_vogue_logo_8.png" alt="Velvet Vogue Logo" style="height:150px;">
+    </div>
 </header>
 
-<div style="width:400px;margin:50px auto;background:#f8c8dc;padding:20px;border-radius:10px;text-align:center;">
+<div style="width:400px;margin:50px auto;background:#add8e6;padding:20px;border-radius:10px;text-align:center;">
 <h2>Thank You!</h2>
 <p>Your order has been placed successfully.</p>
 </div><br><br><br><br><br><br><br><br><br><br><br><br>

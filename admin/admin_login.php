@@ -21,18 +21,28 @@ if (isset($_POST['login'])) {
 <html>
 <head>
 <header>
-    <h1>Velvet Vogue</h1>
-    <p>EMBRACE THE ELEGANCE WITHIN YOU </p>
-    <nav>
-        <?php if(!isset($_SESSION['user'])){ ?>
-            <a href="login.php">Login</a> |
-            <a href="products.php" target="_blank">All Products</a> |
-            <a href="contact.php" target="_blank">Contact Us</a>
-        <?php } ?>
-    </nav>
+<header style="background:#add8e6; padding:15px; text-align:center;">
+    <div style="float:center;">
+    <img src="../images/velvet_vogue_logo_8.png" alt="Velvet Vogue Logo" style="height:150px;">
+    </div>
 </header>
     <title>Admin Login</title>
     <link rel="stylesheet" href="../css/style.css">
+    <style>
+    body{
+        margin:0;
+        padding:0;
+        font-family: Arial, sans-serif;
+
+        /* ADMIN page background image */
+        background-image: url('../images/bg-fashion_3.jpg');
+        background-size: cover;        /* cover whole screen */
+        background-position: center;   /* center image */
+        background-repeat: no-repeat;  /* no repeat */
+        background-attachment: fixed;  /* fixed on scroll */
+    }
+    </style>
+
 </head>
 <body><br><br>
 
